@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj": {}
+    "/home/agc/Repos/ping-list-bot/ParallelAndAsyncInDotNET.csproj": {}
   },
   "projects": {
-    "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj": {
+    "/home/agc/Repos/ping-list-bot/ParallelAndAsyncInDotNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj",
+        "projectUniqueName": "/home/agc/Repos/ping-list-bot/ParallelAndAsyncInDotNET.csproj",
         "projectName": "ParallelAndAsyncInDotNET",
-        "projectPath": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj",
+        "projectPath": "/home/agc/Repos/ping-list-bot/ParallelAndAsyncInDotNET.csproj",
         "packagesPath": "/home/agc/.nuget/packages/",
-        "outputPath": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/",
+        "outputPath": "/home/agc/Repos/ping-list-bot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/agc/.nuget/NuGet/NuGet.Config"
