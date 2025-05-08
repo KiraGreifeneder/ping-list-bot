@@ -1,0 +1,15 @@
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/bin/Debug/net9.0/ParallelAndAsyncInDotNET
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/bin/Debug/net9.0/ParallelAndAsyncInDotNET.deps.json
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/bin/Debug/net9.0/ParallelAndAsyncInDotNET.runtimeconfig.json
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/bin/Debug/net9.0/ParallelAndAsyncInDotNET.dll
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/bin/Debug/net9.0/ParallelAndAsyncInDotNET.pdb
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.GeneratedMSBuildEditorConfig.editorconfig
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.AssemblyInfoInputs.cache
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.AssemblyInfo.cs
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.csproj.CoreCompileInputs.cache
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.sourcelink.json
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.dll
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/refint/ParallelAndAsyncInDotNET.dll
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.pdb
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ParallelAndAsyncInDotNET.genruntimeconfig.cache
+/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/Debug/net9.0/ref/ParallelAndAsyncInDotNET.dll

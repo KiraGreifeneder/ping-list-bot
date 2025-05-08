@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj": {}
+  },
+  "projects": {
+    "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj",
+        "projectName": "ParallelAndAsyncInDotNET",
+        "projectPath": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj",
+        "packagesPath": "/home/agc/.nuget/packages/",
+        "outputPath": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/agc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "System.Threading.Tasks.Dataflow": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jgkv+441X0w=",
+  "success": true,
+  "projectFilePath": "/home/agc/Repos/uni-code/ParallelAndAsyncInDotNET/ParallelAndAsyncInDotNET.csproj",
+  "expectedPackageFiles": [
+    "/home/agc/.nuget/packages/system.threading.tasks.dataflow/9.0.4/system.threading.tasks.dataflow.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
