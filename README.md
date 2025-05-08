@@ -14,7 +14,7 @@ dotnet add package System.Threading.Tasks.Dataflow
 The file should contain one IP address per line (see `iplist.txt`) as an example. 
 
 
-Example usafe: 
+Example usage: 
 
 ```
 dotnet run -- ./iplist.txt
