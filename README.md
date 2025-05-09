@@ -43,4 +43,5 @@ This is not parallelized, mainly because it simplifies two things:
 
 This diagram contains all the blocks and paths the data can go through within the pipeline.
 
-![image](https://github.com/user-attachments/assets/6a1d24ec-d826-4257-ab5a-69b8ee3ba413)
+![image](https://github.com/user-attachments/assets/139c935f-07d0-474d-9ced-ed21060dfae3)
+
