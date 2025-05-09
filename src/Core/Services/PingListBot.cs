@@ -42,7 +42,7 @@ public sealed class PingListBot : IDisposable
         _inputBuffer.LinkTo(_stringToIPDataClass, _linkOptions);
         _stringToIPDataClass.LinkTo(_getPingStatus, _linkOptions);
 
-        _getPingStatus.LinkTo(_getHttp80Status, _linkOptions, ip => ip.IsReachable); // if reachable, skip to checking http statuses
+        _getPingStatus.LinkTo(_getHttp80Status, _linkOptions, ip => ip.IsReachable); // if reachable, move on
         _getPingStatus.LinkTo(_handleOutputs); // skip to end if not reachable
 
         _getHttp80Status.LinkTo(_getHttp8080Status, _linkOptions);
