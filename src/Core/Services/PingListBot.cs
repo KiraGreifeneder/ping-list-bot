@@ -7,6 +7,8 @@ using Core.Models;
 
 public sealed class PingListBot : IDisposable
 {
+    private readonly int MAX_PING_ATTEMPTS = 5;
+
     private readonly IIPAddressProvider _provider;
     private readonly List<IPAddressStatus> _results;
     private readonly HttpClient _httpClient;
@@ -41,7 +43,6 @@ public sealed class PingListBot : IDisposable
         _stringToIPDataClass.LinkTo(_getPingStatus, _linkOptions);
 
         _getPingStatus.LinkTo(_getHttp80Status, _linkOptions, ip => ip.IsReachable); // if reachable, skip to checking http statuses
-        _getPingStatus.LinkTo(_getPingStatus, ip => ip.Pings < 5); // feed back to the pinging block if not reachable, give up after 5 attempts
         _getPingStatus.LinkTo(_handleOutputs); // skip to end if not reachable
 
         _getHttp80Status.LinkTo(_getHttp8080Status, _linkOptions);
@@ -50,7 +51,7 @@ public sealed class PingListBot : IDisposable
 
     // Start reading the IP addresses from the provider and sending them through the pipeline
     public async Task StartAsync()
-    {   
+    {
         _results.Clear();
         var ips = _provider.GetIPAddresses();
         await Task.WhenAll(ips.Select(ip => _inputBuffer.SendAsync(ip)));
@@ -97,19 +98,27 @@ public sealed class PingListBot : IDisposable
 
     private async Task<IPAddressStatus> PingIPAsync(IPAddressStatus ip)
     {
-        using var ping = new Ping();
-
-        try
+        while (ip.Pings < MAX_PING_ATTEMPTS)
         {
-            var result = await ping.SendPingAsync(ip.Address, 1000);
-            ip.IsReachable = result.Status == IPStatus.Success;
-        }
-        catch (Exception)
-        {
-            ip.IsReachable = false;
+            using var ping = new Ping();
+
+            try
+            {
+                var result = await ping.SendPingAsync(ip.Address, 1000);
+                ip.Pings++;
+                if (result.Status == IPStatus.Success)
+                {
+                    ip.IsReachable = true;
+                    return ip;
+                }
+            }
+            catch (Exception) 
+            {
+                // Ignored — another attempt can be made or it is marked as unreachable later.
+            }
         }
 
-        ip.Pings++;
+        ip.IsReachable = false;
         return ip;
     }
 

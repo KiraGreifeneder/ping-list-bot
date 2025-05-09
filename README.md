@@ -30,9 +30,9 @@ The ping bot is implemented as a pipeline where the all the blue blocks in the g
 
 > Warning: Currently, there is no limit as to how many of each block can run in parallel. Don't overdo it :D
 
-IP addresses enter the input buffer as strings and are converted to an IPAddressStatus object. 
+IP addresses enter the input buffer as strings and are converted to an `IPAddressStatus` object. 
 This object is passed along the pipeline and has its fields set depending on the success or failure of the ping or request.
-An address is fed back into the ping block 5 times (causing another ping attempt to be made for it) before giving up.
+5 Ping attempts will be made in the `TryPing` block before giving up and skipping to the final ActionBlock.
 If a successful ping was made, the address is fed right into the `TryHTTP` blocks, where requests are made on port 80 and 8080 respectively.
 
 The final ActionBlock runs synchronously again and handles all the console output once the `IPAdressStatus` objects arrive there. 
