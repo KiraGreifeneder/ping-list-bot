@@ -97,11 +97,11 @@ public sealed class PingListBot : IDisposable
     }
 
     private async Task<IPAddressStatus> PingIPAsync(IPAddressStatus ip)
-    {
+    {   
+        using var ping = new Ping();
+        
         while (ip.Pings < MAX_PING_ATTEMPTS)
         {
-            using var ping = new Ping();
-
             try
             {
                 var result = await ping.SendPingAsync(ip.Address, 1000);
